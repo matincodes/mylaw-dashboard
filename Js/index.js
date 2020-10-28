@@ -6,7 +6,7 @@ const body = document.querySelector("body");
  });
 
   async function getCases() {
-    const result = await fetch("http://localhost:3000/allCases")
+    const result = await fetch("https://my-json-server.typicode.com/matincodes/json-server/allCases")
     const data = await result.json();
     const request = data.cases;
     const total = document.querySelectorAll("h3");
