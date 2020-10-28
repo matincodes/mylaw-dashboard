@@ -1,9 +1,4 @@
-const bar = document.querySelector(".nav__link");
-const body = document.querySelector("body");
 
- bar.addEventListener("click", () => {
-    body.classList.toggle("sidebar-expand")
- });
 
   async function getCases() {
     const result = await fetch("https://my-json-server.typicode.com/matincodes/json-server/allCases")
@@ -179,9 +174,17 @@ chart.render()
 
         
     })
-    
+
+
 }
 
 getCases()
 
+const bar = document.querySelector(".nav__link");
+const body = document.querySelector("body");
+
+ bar.addEventListener("click", () => {
+    body.classList.toggle("sidebar-expand")
+ });
+    
  
