@@ -14,12 +14,13 @@
        index === 4 ? cur.textContent = request.new_cases: cur;
     });
 
-    const active = data.active_cases
-    const newCases = data.new_cases
-    const closed = data.closed_cases
-    const type = document.querySelector('.month__selection')
+    const active = data.active_cases;
+    const newCases = data.new_cases;
+    const closed = data.closed_cases;
+    const type = document.querySelector('.month__selection');
+    const content = document.querySelector('.content');
 
-    
+content.textContent = `You have ${request.new_cases} new cases to attend to today`    
 
 
 const options = {
@@ -181,10 +182,16 @@ chart.render()
 getCases()
 
 const bar = document.querySelector(".nav__link");
+const drop = document.querySelector("#bell");
+console.log(drop)
 const body = document.querySelector("body");
 
  bar.addEventListener("click", () => {
     body.classList.toggle("sidebar-expand")
  });
+
+ drop.addEventListener("click", () => {
+  body.classList.toggle("dropdown-expand")
+});
     
  

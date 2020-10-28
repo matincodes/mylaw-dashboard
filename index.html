@@ -15,7 +15,7 @@
             <ul class="nav__bar"> 
                 <li class="nav__item">
                     <p class="nav__link">
-                        <i id="bar" class="fas fa-bars"></i>
+                        <i  class="fas fa-bars"></i>
 					</p>
                 </li>
                 <li class="nav__item">
@@ -23,25 +23,26 @@
                         <img src="Images/logo.jpg" alt="" class="logo">
 					</p>
                 </li>
-            </ul>
-            <form action="" class="nav__search">
-                <input type="text" name="search"  placeholder="What are you looking for....">
-                <i class="fas fa-search"></i>
-            </form>
-            <ul class="nav__bar nav__right"> 
+			</ul>
+			
+            <ul class="nav__bar"> 
                 <li class="nav__item">
-                    <p href="" class="nav__link">
-                        <i class="fas fa-bell"></i>
+                    <p class="nav__link">
+                        <i id='bell'class="fas fa-bell"></i>
 					</p>
-                    <!-- <ul class="dropdown__menu">
-                        <div class="dropdown__header">
-                             <span>Notification</span>
-                        </div>
-                        <div class="dropdown__content
-                        `">
-
-                        </div>
-                    </ul> -->
+					<ul id="notification-menu" class="dropdown-menu notification-menu">
+						<div class="dropdown-menu-header">
+							<span>
+								Notifications
+							</span>
+						</div>
+						<div class="dropdown-menu-content">
+							<li>
+								<p class="content">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+								</p>
+							</li>
+                    </ul> 
                 </li>
             </ul>
         </nav>
@@ -152,13 +153,13 @@
                 <option value="three">Two Month Ago</option>
                 <option value="four">Three Month Ago</option>
                 <option value="five">Four Month Ago</option>
-                <option value="six" >Five Month</option>
+                <option value="six" >Five Month Ago</option>
             </select>
             <div id="chart"></div>
-        </div>
-        
+        </div>      
     </section>
-    
+	<!-- End Main Content -->
+	
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="Js/index.js"></script>
 </body>
